@@ -1,0 +1,10 @@
+version: '3'
+services:
+  basic-java:
+    container_name: withoutDynatraceExample
+    build:
+      dockerfile: BasicJavaDockerfile
+  dynatrace-java:
+    container_name: withDynatraceExample
+    build:
+      dockerfile: DockerWithDynatrace

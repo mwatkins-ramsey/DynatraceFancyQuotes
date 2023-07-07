@@ -1,0 +1,8 @@
+FROM 058238361356.dkr.ecr.us-east-1.amazonaws.com/innersource/jvm/rs-java11:3.0.0
+
+WORKDIR .
+
+
+COPY . .
+
+CMD ["java", "-jar", "target/DynatraceFancyQuotes-1.0-SNAPSHOT.jar"]
